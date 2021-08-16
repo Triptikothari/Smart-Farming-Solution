@@ -1,0 +1,204 @@
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(images/1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(images/2.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(images/3.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(images/4.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(images/5.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(images/6.jpg);
+    animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navbar */
+/* @media only screen and(max-width:1000px) {
+    #header  {
+        position:fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    #header .header{
+        min-height: 8vh;
+    }
+    
+    #header .container  {
+        background-color: transparent;
+        color: white;
+        min-height: 100px;
+    
+    }
+    
+    
+    .logo img{
+            float: left;
+            position: relative;
+            margin: 10px 15px 15px 10px;
+            width: 100%;
+            background-color: whitesmoke;
+            border-radius: 1px;
+        
+    }
+    
+    
+    nav {
+        float: right;
+        margin: 0;
+        overflow:hidden;
+        text-align: center;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    nav > ul > li > a{
+        color: white;
+        display: block;
+        line-height: 2em;
+        padding: 0.5em 1em;
+        font-weight: bolder;
+    
+    }
+    nav ul li a:hover{
+        color:crimson;
+        font-stretch: semi-expanded;
+        
+    }
+    
+    nav ul ul {
+        display: none;
+        position: absolute; 
+        color: white;
+    }
+     /* the height of the main nav */
+    
+        
+    /* Display Dropdowns on Hover 
+    nav ul li:hover > ul {
+        display:table-column;
+        color: white;
+        font-weight: bold;
+    }
+        
+    /* Fisrt Tier Dropdown 
+    nav ul ul li {
+        width:100px;
+        float:none;
+        display:list-item;
+        position: relative;
+    }
+    
+    nav ul ul li a{
+        color:white;
+        font-weight: bolder;
+        
+    }
+    
+    
+    nav ul ul li a:hover{
+        color:crimson;
+    }
+        
+    /* Change this in order to change the Dropdown symbol 
+    li > a:after { content:  ' +'; }
+    li > a:only-child:after { content: ''; }   
+      
+}*/
